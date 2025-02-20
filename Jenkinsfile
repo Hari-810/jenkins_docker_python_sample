@@ -8,6 +8,11 @@ pipeline {
     }
 
     stages {
+        stage('start the buld') {
+            steps {
+                sh "Hello world"
+            }
+        }
         stage('Clone Repository') {
             steps {
                 git 'https://github.com/Hari-810/jenkins_docker_python_sample.git'
