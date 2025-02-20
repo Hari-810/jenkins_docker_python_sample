@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Hari-810/jenkins_docker_python_sample.git'
+                sh "git clone https://github.com/Hari-810/jenkins_docker_python_sample.git"
             }
         }
 
