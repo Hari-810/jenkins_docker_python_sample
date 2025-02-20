@@ -4,7 +4,10 @@ pipeline {
     environment {
         IMAGE_NAME = 'flask-app'
         CONTAINER_NAME = 'flask_container'
-        PORT = '5000'
+        PORT = '5000'        
+        GIT_REPO = 'https://github.com/Hari-810/jenkins_docker_python_sample.git'
+        GIT_BRANCH = 'main' // Change this to the correct branch
+    
     }
 
     stages {
